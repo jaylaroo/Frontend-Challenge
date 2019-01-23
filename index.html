@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=375px, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+  <div class="screen-container">
+
+
+    <!-- <div class="iphoneXS"> -->
+    <center><img id="statusBar" src="Images/Black Base.png" alt="statusBar"></center>
+    <div class="container">
+      <img src="Images/Topbar.png" alt="topBar">
+      <!-- <img id="direct" src="direct.png" alt=""> -->
+      <div class="dropdown">
+        <button class="tablinks" onclick="openDirection(event, 'table-Eastbound')" id="defaultOpen">Eastbound <img src="Images/Arrow Down.png" alt="arrowdown"></button>
+        <div class="dropdown-content">
+
+          <button class="tablinks" onclick="openDirection(event, 'table-Northbound')">Northbound</button>
+          <button class="tablinks" onclick="openDirection(event, 'table-Southbound')">Southbound</button>
+          <button class="tablinks" onclick="openDirection(event, 'table-Reroute')">Reroute</button>
+          <button class="tablinks" onclick="openDirection(event, 'table-OOS')">Out of Service</button>
+
+      </div>
+    </div>
+  </div>
+      <img src="Images/Map.png" alt="map">
+      <img id="shape"src="Images/Shape.png" alt="more">
+<div id="table-Eastbound" class="tabcontent">
+  <table class="yeee">
+    <tr>
+      <th class="busNum">Bus Number</th>
+      <th class="arrival">Arrival</th>
+      <th class="notify">Notify</th>
+    </tr>
+    <tr>
+      <td class="line">Line 60
+        <br><p class="destination">Randolph | Harbor Dr</p>
+      </td>
+      <td class="time">3 min
+        <br><p class="frequency">every 20 minutes</p>
+      </td>
+      <td><img class="timer" src="Images/Timer.png" alt="redtimer"></td>
+    </tr>
+    <tr>
+      <td class="line">Line 124
+        <br><p class="destination">Navy Pier</p>
+      </td>
+      <td class="time">10 min
+        <br><p class="frequency">every 10 minutes</p>
+      </td>
+      <td><img class="timerGrey" src="Images/Timer Copy.png" alt="greytimer"></td>
+
+    </tr>
+
+  </table>
+  </div>
+
+<div class="tab-content">
+
+  <div id="table-Northbound" class="tabcontent">
+    <table class="yeee">
+      <tr>
+        <th class="busNum">Bus Number</th>
+        <th class="arrival">Arrival</th>
+        <th class="notify">Notify</th>
+      </tr>
+      <tr>
+        <td class="line">Line 151
+          <br><p class="destination">Devon | Clark</p>
+        </td>
+        <td class="time">3 min
+          <br><p class="frequency">every 16 minutes</p>
+        </td>
+        <td><img class="timer" src="Images/Timer.png" alt="redtimer"></td>
+      </tr>
+    </table>
+    </div>
+
+    <div id="table-Southbound" class="tabcontent">
+      <table class="yeee">
+        <tr>
+          <th class="busNum">Bus Number</th>
+          <th class="arrival">Arrival</th>
+          <th class="notify">Notify</th>
+        </tr>
+        <tr>
+          <td class="line">Line J14
+            <br><p class="destination">103rd | Stony Island</p>
+          </td>
+          <td class="time">3 min
+            <br><p class="frequency">every 15 minutes</p>
+          </td>
+          <td><img class="timer" src="Images/Timer.png" alt="redtimer"></td>
+        </tr>
+        <tr>
+          <td class="line">Line 124
+            <br><p class="destination">Navy Pier</p>
+          </td>
+          <td class="time">10 min
+            <br><p class="frequency">every 10 minutes</p>
+          </td>
+          <td><img class="timerGrey" src="Images/Timer Copy.png" alt="greytimer"></td>
+        </tr>
+      </table>
+      </div>
+
+      <div id="table-Reroute" class="tabcontent">
+        <table class="yeee">
+          <tr>
+            <th class="busNum">Bus Number</th>
+            <th class="arrival">Arrival</th>
+            <th class="notify">Notify</th>
+          </tr>
+          <tr>
+            <td class="line">Line 6x
+              <br><p class="destination">Jackson Park Express</p>
+            </td>
+            <td class="time">N/A
+              <br><p class="frequency">N/A</p>
+            </td>
+            <td><img class="timerGrey" src="Images/Timer Copy.png" alt="greytimer"></td>
+          </tr>
+
+        </table>
+        </div>
+
+        <div id="table-OOS" class="tabcontent">
+          <table class="yeee">
+            <tr>
+              <th class="busNum">Bus Number</th>
+              <th class="arrival">Arrival</th>
+              <th class="notify">Notify</th>
+            </tr>
+
+            <tr>
+              <td class="line">Line 4
+                <br><p class="destination">Cottage Grove</p>
+              </td>
+              <td class="time">N/A
+                <br><p class="frequency">Resumes 12:10 am</p>
+              </td>
+              <td><img class="timer" src="Images/Timer.png" alt="redtimer"></td>
+            </tr>
+            <tr>
+              <td class="line">Line 20
+                <br><p class="destination">Madison</p>
+              </td>
+              <td class="time">N/A
+                <br><p class="frequency">Resumes 12:10 am</p>
+              </td>
+              <td><img class="timerGrey" src="Images/Timer Copy.png" alt="greytimer"></td>
+
+            </tr>
+            <tr>
+              <td class="line">Line 157
+                <br><p class="destination">Streeterville | Taylor</p>
+              </td>
+              <td class="time">N/A
+                <br><p class="frequency">Resumes 6:00 am</p>
+              </td>
+              <td><img class="timerGrey" src="Images/Timer Copy.png" alt="greytimer"></td>
+
+            </tr>
+          </table>
+          </div>
+</div>
+
+      <img class="navBar"src="Images/Bottom.png" alt="navBar">
+    <!-- </div> -->
+  </div>
+
+  <script src="javascript.js"></script>
+  </body>
+</html>

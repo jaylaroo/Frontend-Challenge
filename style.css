@@ -1,0 +1,202 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%
+}
+
+body {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: #a1a1a1;
+  height: 812px;
+  width: 375px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.screen-container {
+
+  background-color: #f8f8f8;
+  height: 812px;
+  width: 375px;
+  border-radius: 15px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* .listDirections {
+  font-size: 15px;
+  color: black;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+
+  display: inline-block;
+} */
+.tablinks {
+  background-color: #f8f8f8;
+  color: black;
+  padding: 15px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 15px;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content button:hover {background-color: #a1a1a1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+#statusBar {
+
+  margin-top: 10px;
+}
+#shape {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navBar {
+  position: absolute;
+  top: 729px;
+}
+
+hr.thin {
+height: 1px;
+border: 0;
+color: #333;
+background-color: #333;
+width: 80%; }
+
+h3 {
+  font-size: 15px;
+}
+
+th {
+  font-size: 14px;
+  color: #FF2D55;
+  font-weight: 400;
+  margin-bottom: 5px;
+
+}
+
+.border {
+
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.busNum {
+  float: left;
+  margin-left: 5%;
+}
+
+.arrival{
+ text-align: right;
+
+}
+
+.head {
+  border: 0;
+  height: 0;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.line {
+  margin-top: 4px;
+  font-size: 17px;
+  color: #FF2D55;
+  font-weight: 700;
+  margin-left: 5%;
+  float: left;
+
+}
+
+.destination {
+  margin-top: 2px;
+  font-size: 14px;
+  color: Black;
+  font-weight: 500;
+  border: 0;
+  height: 0;
+
+}
+
+.time {
+  padding-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.timer, .timerGrey {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.frequency {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: right;
+}
+
+.table {
+  background-color: white;
+}
+
+
+
+.yeee {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.yeee tr{
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+
+}
