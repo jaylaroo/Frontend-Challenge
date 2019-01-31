@@ -16,6 +16,21 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+h2 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  top: 0px;
+  left: 25%;
+}
+
+#backArrow {
+position: relative;
+  top: 45px;
+  left: 3%;
+}
+
 .screen-container {
 
   background-color: #f8f8f8;
@@ -23,21 +38,14 @@ body {
   width: 375px;
   border-radius: 15px;
 }
-.container {
+.top {
   position: relative;
-  text-align: center;
+
   color: white;
+  margin-bottom: 60px;
 }
 
-/* .listDirections {
-  font-size: 15px;
-  color: black;
-  position: absolute;
-  top: 75%;
-  left: 50%;
 
-  display: inline-block;
-} */
 .tablinks {
   background-color: #f8f8f8;
   color: black;
@@ -51,13 +59,13 @@ body {
 .dropdown {
   position: absolute;
   display: inline-block;
-  top: 75%;
+  /* top: 95%; */
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top: 10px;
 }
 .dropdown-content {
-  display: none;
-  position: absolute;
+
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -92,10 +100,7 @@ body {
   margin-right: auto;
 }
 
-.navBar {
-  position: absolute;
-  top: 729px;
-}
+
 
 hr.thin {
 height: 1px;
@@ -198,5 +203,35 @@ th {
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
+
+}
+.navBar {
+  position: absolute;
+  top: 729px;
+  width: 375px;
+  margin-left: 20px;
+  /* margin-right: 20px; */
+  padding: 5px;
+
+}
+
+
+
+.iconText {
+  margin-top: 0px;
+  font-size: 10px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right: 30px;
+  padding-right: 5px;
+
+}
+
+#homeIndicator {
+  position: absolute;
+
+  top: 800px;;
+  left: 125px;
+
 
 }
